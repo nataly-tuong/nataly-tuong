@@ -8,3 +8,5 @@ When I'm not coding, you'll find me: painting digitally & traditionally, gawking
 ▸ **Building with**: React, JavaScript, TailwindCSS  
 ▸ **Learning**: UI motion design, Linux customization  
 ▸ **Design**: Figma, accessibility-first workflows  
+
+<meta name="robots" content="noindex">
