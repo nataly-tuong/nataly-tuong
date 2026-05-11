@@ -7,6 +7,5 @@ When I'm not coding, you'll find me: painting digitally & traditionally, gawking
 ### Current Tools & Interest Goals
 ▸ **Building with**: Springboot, Java, Bootstrap  
 ▸ **Learning**: Springboot, Bootstrap,
-▸ **Design**: Figma, 
 
 <meta name="robots" content="noindex">
