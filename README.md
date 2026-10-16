@@ -1,3 +1,3 @@
 ### Hi, I'm Nataly ദ്ദി ˉ͈̀꒳ˉ͈́ )✧ 
 
-Currently polishing up on React right now! Will focus on TypeScript next.
+Getting into the groove of TypeScript right now. DSA study next and then Node/Express
