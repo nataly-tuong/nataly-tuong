@@ -1,0 +1,43 @@
+name: Update daily fun fact
+
+on:
+  schedule:
+    - cron: "17 8 * * *" # Every day at 08:17 UTC
+  workflow_dispatch: # Also allows manual runs
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-daily-fact
+  cancel-in-progress: false
+
+jobs:
+  update-fact:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate fact SVG
+        run: python scripts/fact.py
+
+      - name: Commit updated SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/fact.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update daily fun fact"
+          git push
