@@ -7,6 +7,7 @@ Currently building **Mothball**, a shared-closet app
 **Fun fact of the day**
 
 <!-- FACT:START -->
+> There were always 56 curls in Shirley Temple`s hair.
 <!-- FACT:END -->
 
 <br clear="right" />
