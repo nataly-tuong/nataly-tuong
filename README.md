@@ -1,4 +1,4 @@
-<img align="right" src="koi/koi.gif" width="140" alt="My koi" />
+<img align="right" src="koi/koi.gif" width="250" alt="My koi" />
 
 ### Hi, I'm Nataly ദ്ദി ˉ͈̀꒳ˉ͈́ )✧
 
