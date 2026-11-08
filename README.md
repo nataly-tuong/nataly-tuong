@@ -4,4 +4,9 @@
 
 Currently building **Mothball**, a shared-closet app
 
+**Fun fact of the day**
+
+<!-- FACT:START -->
+<!-- FACT:END -->
+
 <br clear="right" />
