@@ -7,4 +7,5 @@ Currently building **Mothball**, a shared-closet app
 **Fun fact of the day**
 
 <!-- FACT:START -->
+> It's illegal to spit on the sidewalk in Norfolk, Virginia.
 <!-- FACT:END -->
