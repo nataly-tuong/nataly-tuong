@@ -47,12 +47,13 @@ def main() -> None:
     version = hashlib.sha256(svg.encode("utf-8")).hexdigest()[:12]
 
     content = README.read_text(encoding="utf-8")
+
     updated, count = re.subn(
         r'src="(?:https://raw\.githubusercontent\.com/nataly-tuong/nataly-tuong/main/)?assets/fact\.svg(?:\?[^"]*)?"',
         f'src="https://raw.githubusercontent.com/nataly-tuong/nataly-tuong/main/assets/fact.svg?v={version}"',
         content,
     )
-    
+
     if count == 0:
         raise ValueError(
             'README.md must contain an image with src="assets/fact.svg".'
