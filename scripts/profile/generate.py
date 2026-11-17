@@ -67,7 +67,7 @@ def main():
     OUT.write_text(svg, encoding='utf-8')
     version = hashlib.sha256(svg.encode('utf-8')).hexdigest()[:12]
     alt = f"{cfg['greeting']} {cfg['kaomoji']}✧ Currently building {cfg['project']}."
-    img = f'<img src="{RAW.format(user=user)}?v={version}" width="820" alt="{alt}" />'
+    img = f'<a href="https://github.com/{user}"><img src="{RAW.format(user=user)}?v={version}" width="820" alt="{alt}" /></a>'
     readme = README.read_text(encoding='utf-8') if README.exists() else ''
     if '<!-- profile:start -->' in readme:
         readme = re.sub(r'<!-- profile:start -->.*?<!-- profile:end -->', f'<!-- profile:start -->\n{img}\n<!-- profile:end -->', readme, flags=re.S)
