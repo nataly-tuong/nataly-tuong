@@ -1,0 +1,38 @@
+{
+  "user": "nataly-tuong",
+  "greeting": "Hi, I'm Nataly",
+  "kaomoji": "ദ്ദി ˉ͈̀꒳ˉ͈́ )",
+  "project": "Mothball",
+  "tagline": "a shared-closet app",
+  "mood": "auto",
+  "season": "auto",
+  "holiday": "auto",
+  "birthday": null,
+  "_last": {
+    "fact": "Every person, including identical twins, has a unique eye & tongue print along with their finger print.",
+    "fact_date": "2026-11-16",
+    "commits": 14,
+    "langs": [
+      [
+        "TypeScript",
+        52
+      ],
+      [
+        "JavaScript",
+        20
+      ],
+      [
+        "CSS",
+        14
+      ],
+      [
+        "Go",
+        8
+      ]
+    ],
+    "mood": "happy",
+    "season": "autumn",
+    "holiday": "thanksgiving",
+    "date": "2026-11-16"
+  }
+}

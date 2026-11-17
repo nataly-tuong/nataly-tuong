@@ -1,0 +1,71 @@
+name: Profile
+
+on:
+  schedule:
+    - cron: "7 8 * * *" # every day, just after midnight Pacific
+  workflow_dispatch:
+    inputs:
+      project:
+        description: "Currently building (project name)"
+        required: false
+      tagline:
+        description: "Tagline after the project name"
+        required: false
+      season:
+        description: "auto, spring, summer, autumn, winter"
+        required: false
+      holiday:
+        description: "auto, none, halloween, thanksgiving, christmas, newyear, lunarnewyear, valentines, birthday"
+        required: false
+      mood:
+        description: "auto, sleeping, lazy, happy, hyped"
+        required: false
+      new_fact:
+        description: "Fetch a new fun fact"
+        type: boolean
+        default: false
+  push:
+    paths:
+      - profile.json
+      - scripts/profile/**
+      - .github/workflows/profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile
+  cancel-in-progress: false
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Draw the profile
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROJECT: ${{ inputs.project }}
+          TAGLINE: ${{ inputs.tagline }}
+          SEASON: ${{ inputs.season }}
+          HOLIDAY: ${{ inputs.holiday }}
+          MOOD: ${{ inputs.mood }}
+          NEW_FACT: ${{ inputs.new_fact && '1' || '' }}
+        run: python scripts/profile/generate.py
+
+      - name: Commit if it changed
+        run: |
+          git add assets/profile.svg README.md profile.json
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update profile"
+          git push
