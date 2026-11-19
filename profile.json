@@ -9,9 +9,9 @@
   "holiday": "auto",
   "birthday": null,
   "_last": {
-    "fact": "Honking of car horns for a couple that just got married is an old superstition to insure great sex.",
+    "fact": "The shortest war in history was between Zanzibar and England in 1896. Zanzibar surrendered after 38 minutes.",
     "fact_date": "2026-11-19",
-    "commits": 83,
+    "commits": 84,
     "langs": [
       [
         "TypeScript",
