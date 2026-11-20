@@ -2,8 +2,8 @@
   "user": "nataly-tuong",
   "greeting": "Hi, I'm Nataly",
   "kaomoji": "ദ്ദി ˉ͈̀꒳ˉ͈́ )",
-  "project": "agentic bots",
-  "tagline": "",
+  "project": "tripsatchel",
+  "tagline": "react native app",
   "mood": "auto",
   "season": "auto",
   "holiday": "auto",
@@ -11,11 +11,11 @@
   "_last": {
     "fact": "The shortest war in history was between Zanzibar and England in 1896. Zanzibar surrendered after 38 minutes.",
     "fact_date": "2026-11-19",
-    "commits": 84,
+    "commits": 71,
     "langs": [
       [
         "TypeScript",
-        67
+        72
       ],
       [
         "Python",
@@ -23,11 +23,11 @@
       ],
       [
         "Jupyter Notebook",
-        7
+        8
       ],
       [
-        "JavaScript",
-        7
+        "CSS",
+        6
       ]
     ],
     "mood": "hyped",
