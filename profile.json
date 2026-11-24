@@ -9,9 +9,9 @@
   "holiday": "auto",
   "birthday": null,
   "_last": {
-    "fact": "Ketchup was sold in the 1830s as medicine.",
-    "fact_date": "2026-11-23",
-    "commits": 66,
+    "fact": "The Simpsons is the longest running animated series on TV.",
+    "fact_date": "2026-11-24",
+    "commits": 42,
     "langs": [
       [
         "TypeScript",
@@ -33,6 +33,6 @@
     "mood": "hyped",
     "season": "autumn",
     "holiday": "thanksgiving",
-    "date": "2026-11-23"
+    "date": "2026-11-24"
   }
 }
